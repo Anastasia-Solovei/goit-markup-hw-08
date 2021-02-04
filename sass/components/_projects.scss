@@ -1,0 +1,44 @@
+/* Проекты */
+.project {
+  &__item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: $animation-background-color;
+    transform: translateY(100%);
+  }
+
+  &__description-text {
+    color: $white-color;
+    font-size: $animation-text-font-size;
+    line-height: 1.56;
+  }
+
+  &__label {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__text {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}

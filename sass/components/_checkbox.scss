@@ -1,0 +1,35 @@
+/* Чекбокс */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+  }
+
+  &__link {
+    color: $accent-color;
+    text-decoration-skip-ink: none;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    margin-left: -24px;
+    background-image: url(../images/check-off.svg);
+    border-radius: 2px;
+  }
+}
+
+.checkbox__input {
+  &:checked + .checkbox__icon {
+    background-color: $accent-color;
+    background-image: url(../images/check-on.svg);
+  }
+}

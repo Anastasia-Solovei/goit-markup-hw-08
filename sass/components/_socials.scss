@@ -1,0 +1,74 @@
+/* Иконки соц сетей */
+.social__content {
+  display: inline-flex;
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.social__label {
+  margin-bottom: 20px;
+  color: $white-color;
+  font-weight: $primary-font-weight;
+  line-height: $primary-line-height;
+  text-transform: uppercase;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+
+  &--footer {
+    justify-content: space-between;
+  }
+}
+
+.social__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $icon-color;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: color $primary-duration$timing-function,
+    background-color $primary-duration$timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+
+  &--footer {
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color $primary-duration$timing-function;
+  }
+
+  &--footer:hover,
+  &--footer:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+  &--footer {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

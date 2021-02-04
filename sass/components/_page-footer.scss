@@ -1,0 +1,21 @@
+/* Подвал сайта */
+.page-footer {
+  background-color: $footer-bcg-color;
+
+  &__content {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.address {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: $white-color;
+  font-style: normal;
+}

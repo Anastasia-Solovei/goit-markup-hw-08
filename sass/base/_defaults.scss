@@ -1,0 +1,32 @@
+body {
+  background-color: $primary-bcg-color;
+  color: $primary-text-color;
+  font-family: $main-font-family;
+  font-size: $primary-text-font-size;
+  line-height: $default-line-height;
+  letter-spacing: 0.03em;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
