@@ -7,17 +7,9 @@
   font-family: inherit;
   font-size: $button-text-font-size;
   font-weight: $primary-font-weight;
-  line-height: 1.88;
+  line-height: 1.87;
   text-align: center;
   cursor: pointer;
-
-  &--order {
-    padding: 10px 32px;
-    color: $white-color;
-    background-color: $accent-color;
-    align-items: center;
-    letter-spacing: 0.06em;
-  }
 
   &--submit {
     width: 200px;
