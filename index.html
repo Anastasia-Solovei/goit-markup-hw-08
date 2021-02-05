@@ -16,38 +16,41 @@
   <body>
     <!----------------------------Шапка сайта---------------------------------------->
     <header class="page-header section">
-      <div class="main-nav container">
-        <a href="/index.html" class="logo"
+      <div class="page-header__container container">
+        <a href="/index.html" class="page-header__logo logo"
           >Web<span class="logo__text">Studio</span>
         </a>
 
         <!--------------------------Меню навигации------------------------------------>
         <nav class="page-header__nav">
-          <ul class="site-nav site-nav--left list">
-            <li class="site-nav__item">
+          <ul class="page-header__list list">
+            <li class="page-header__link-item">
               <a
                 href="./index.html"
-                class="site-nav__link site-nav__link--current"
+                class="page-header__link page-header__link--current"
                 >Студия</a
               >
             </li>
 
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            <li class="page-header__link-item">
+              <a href="./portfolio.html" class="page-header__link">Портфолио</a>
             </li>
 
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
+            <li class="page-header__link-item">
+              <a href="" class="page-header__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <!------------------------------Контакты------------------------------------->
-        <ul class="contact-list contact-list--left list">
-          <li class="contact-list__item">
-            <a class="contact-list__link" href="mailto:info@devstudio.com">
+        <ul class="page-header__contacts list">
+          <li class="page-header__contact-item">
+            <a
+              class="page-header__contact-link"
+              href="mailto:info@devstudio.com"
+            >
               <svg
-                class="contact-list__icon contact-list__icon--start"
+                class="page-header__contact-icon page-header__contact-icon--start"
                 width="16"
                 height="12"
               >
@@ -57,10 +60,10 @@
             </a>
           </li>
 
-          <li class="contact-list__item">
-            <a class="contact-list__link" href="tel:+380961111111">
+          <li class="page-header__contact-item">
+            <a class="page-header__contact-link" href="tel:+380961111111">
               <svg
-                class="contact-list__icon contact-list__icon--start"
+                class="page-header__contact-icon page-header__contact-icon--start"
                 width="10"
                 height="16"
               >
@@ -70,18 +73,24 @@
             </a>
           </li>
         </ul>
+
+        <button class="page-header__menu">
+          <svg class="page-header__menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-------------------------------Герой--------------------------------------->
       <section class="hero section">
-        <h1 class="hero__heading">
-          Эффективные решения<br />для вашего бизнеса
-        </h1>
-        <button class="button--order button" type="button" data-modal-open>
-          Заказать услугу
-        </button>
+        <div class="hero__container container">
+          <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero__button button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
       </section>
 
       <!------------------------Особенности компании------------------------------->
