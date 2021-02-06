@@ -1,5 +1,9 @@
-/* Герой */
+/* Hero */
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -16,39 +20,26 @@
   background-size: cover;
 
   @media screen and (min-width: $desktop) {
+    max-width: 1600px;
     height: 600px;
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 118px 60px;
-
-    @media screen and (min-width: $tablet) {
-      padding-left: 204px;
-      padding-right: 204px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      padding: 200px 252px;
-    }
-  }
-
   &__heading {
+    width: 360px;
     margin-top: 0;
     margin-bottom: 30px;
-
     color: $white-color;
 
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     @media screen and (min-width: $desktop) {
+      width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }
