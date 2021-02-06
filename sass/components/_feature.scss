@@ -1,14 +1,41 @@
-/* Особенности */
+/* Features */
 .feature {
-  padding: 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    margin-left: -30px;
+    margin-top: -30px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
+  }
 
   &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 120px;
-
     background-color: $secondary-bcg-color;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -22,17 +49,11 @@
   &__title {
     font-size: $primary-text-font-size;
     line-height: $primary-line-height;
+    text-align: center;
     text-transform: uppercase;
-  }
-}
 
-.feature__item {
-  display: inline-flex;
-  flex-direction: column;
-
-  width: 270px;
-
-  &:not(:first-child) {
-    margin-left: 30px;
+    @media screen and (min-width: $tablet) {
+      text-align: unset;
+    }
   }
 }
