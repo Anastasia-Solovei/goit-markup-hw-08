@@ -1,17 +1,10 @@
 /* Секция */
 .section {
-  &--team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: $secondary-bcg-color;
-  }
-
-  &--client {
-    padding: 94px 0;
-  }
-
-  &--page-footer {
-    padding: 60px 0;
+  &__subheading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: $primary-font-weight;
   }
 
   &__heading {
@@ -24,19 +17,11 @@
     text-align: center;
   }
 
-  &__list {
-    display: flex;
+  &--client {
+    padding: 94px 0;
   }
 
-  &__subheading {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: $title-text-color;
-    font-weight: $primary-font-weight;
-  }
-
-  &__text {
-    margin-top: 0;
-    margin-bottom: 0;
+  &--page-footer {
+    padding: 60px 0;
   }
 }
