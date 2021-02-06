@@ -1,8 +1,15 @@
-/* Услуги */
+/* Service */
 .service {
-  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 94px;
+  }
 
   &__list {
+    display: flex;
     justify-content: space-between;
   }
 
