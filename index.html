@@ -74,10 +74,25 @@
           </li>
         </ul>
 
-        <button class="page-header__menu page-header__menu--is-open" area-expanded="false">
-          <svg class="page-header__icon" width="40" height="40" area-label="Переключатель мобильного меню">
-            <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
-            <use class="icon-cross" href="./images/icons.svg#icon-"></use>
+        <button
+          class="page-header__menu page-header__menu--is-open"
+          type="button"
+          area-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            area-label="Переключатель мобильного меню"
+          >
+            <use
+              class="page-header__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use>
+            <use
+              class="page-header__icon-burger"
+              href="./images/icons.svg#icon-burger"
+            ></use>
           </svg>
         </button>
       </div>
@@ -382,61 +397,59 @@
         </ul>
       </section>
 
-      <!------------------------------Постоянные клиенты------------------------------>
-      <!--<section class="client section section--client">
-        <div class="container">
-          <h2 class="client__header section__heading">Постоянные клиенты</h2>
+      <!-- Clients -->
+      <section class="clients container">
+        <h2 class="clients__heading section__heading">Постоянные клиенты</h2>
 
-          <ul class="client__list section__list list">
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="45" height="50">
-                  <use href="./images/icons.svg#icon-logo-1"></use>
-                </svg>
-              </a>
-            </li>
+        <ul class="clients__list list">
+          <li class="clients__item">
+            <a href="#" class="clients__link">
+              <svg class="clients__icon" width="45" height="50">
+                <use href="./images/icons.svg#icon-logo-1"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="40" height="52">
-                  <use href="./images/icons.svg#icon-logo-2"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="clients__item">
+            <a href="#" class="clients__link">
+              <svg class="clients__icon" width="40" height="52">
+                <use href="./images/icons.svg#icon-logo-2"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="41" height="43">
-                  <use href="./images/icons.svg#icon-logo-3"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="clients__item">
+            <a href="#" class="clients__link">
+              <svg class="clients__icon" width="41" height="43">
+                <use href="./images/icons.svg#icon-logo-3"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="80" height="42">
-                  <use href="./images/icons.svg#icon-logo-4"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="clients__item">
+            <a href="#" class="clients__link">
+              <svg class="clients__icon" width="80" height="42">
+                <use href="./images/icons.svg#icon-logo-4"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="59" height="47">
-                  <use href="./images/icons.svg#icon-logo-5"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="clients__item">
+            <a href="#" class="clients__link">
+              <svg class="clients__icon" width="59" height="47">
+                <use href="./images/icons.svg#icon-logo-5"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="89" height="45">
-                  <use href="./images/icons.svg#icon-logo-6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="clients__item">
+            <a href="#" class="clients__link">
+              <svg class="clients__icon" width="89" height="45">
+                <use href="./images/icons.svg#icon-logo-6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -612,6 +625,5 @@
     </div>
 
     <script src="./js/modal.js"></script>
-
   </body>
 </html>
