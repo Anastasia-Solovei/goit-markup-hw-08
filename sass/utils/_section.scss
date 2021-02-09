@@ -10,13 +10,8 @@
   &__heading {
     color: $title-text-color;
     font-weight: $primary-font-weight;
-    font-size: $section-heading-font-size;
     line-height: 1.17;
     text-align: center;
-  }
-
-  &--client {
-    padding: 94px 0;
   }
 
   &--page-footer {
