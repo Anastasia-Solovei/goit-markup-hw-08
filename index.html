@@ -15,12 +15,16 @@
 
   <body>
     <!-- Page-header -->
-    <header class="page-header section">
-      <div class="page-header__container container">
-        <a href="/index.html" class="page-header__logo logo"
-          >Web<span class="logo__text">Studio</span>
-        </a>
+    <header class="page-header container">
+      <a href="/index.html" class="page-header__logo logo"
+        >Web<span class="logo__text">Studio</span>
+      </a>
 
+      <div
+        class="page-header__menu-container page-header__menu-container--is-open"
+        id="page-header__menu-container"
+        data-menu
+      >
         <!-- Main navigation -->
         <nav class="page-header__nav">
           <ul class="page-header__list list">
@@ -61,7 +65,10 @@
           </li>
 
           <li class="page-header__contact-item">
-            <a class="page-header__contact-link" href="tel:+380961111111">
+            <a
+              class="page-header__contact-link page-header__contact-link--accent"
+              href="tel:+380961111111"
+            >
               <svg
                 class="page-header__contact-icon page-header__contact-icon--start"
                 width="10"
@@ -74,28 +81,44 @@
           </li>
         </ul>
 
-        <button
-          class="page-header__menu page-header__menu--is-open"
-          type="button"
-          area-expanded="false"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            area-label="Переключатель мобильного меню"
-          >
-            <use
-              class="page-header__icon-cross"
-              href="./images/icons.svg#icon-cross"
-            ></use>
-            <use
-              class="page-header__icon-burger"
-              href="./images/icons.svg#icon-burger"
-            ></use>
-          </svg>
-        </button>
+        <!-- Social links -->
+        <ul class="page-header__social list">
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">Instagram</a>
+          </li>
+
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">Twitter</a>
+          </li>
+
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">Facebook</a>
+          </li>
+
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
+
+      <button
+        class="page-header__menu page-header__menu--is-open"
+        type="button"
+        aria-expanded="false"
+        aria-controls="page-header__menu-container"
+        data-menu-button
+      >
+        <svg width="24" height="16" area-label="Переключатель мобильного меню">
+          <use
+            class="page-header__icon-cross"
+            href="./images/icons.svg#icon-cross"
+          ></use>
+          <use
+            class="page-header__icon-burger"
+            href="./images/icons.svg#icon-burger"
+          ></use>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -553,69 +576,69 @@
     </footer>
 -->
     <!----------------------------Модальное окно------------------------------------>
-    <div class="backdrop backdrop--hidden" data-modal>
-      <div class="backdrop__modal">
-        <button class="button-close" type="button" data-modal-close>
-          <svg class="close-icon" height="11" width="11">
+    <div class="backdrop container backdrop--hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" type="button" data-modal-close>
+          <svg class="modal__icon-close" height="11" width="11">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
 
-        <form class="form-modal" autocomplete="off">
-          <h3 class="form-modal__label section__subheading">
+        <form class="modal__form" autocomplete="off">
+          <h3 class="modal__heading section__subheading">
             Оставьте свои данные, мы вам перезвоним
           </h3>
 
-          <div class="form-field">
-            <label class="form-field__label">Имя</label>
-            <div class="field">
-              <input class="field__input" type="text" name="user-name" />
-              <svg class="field__icon" width="12" height="12">
+          <div class="modal__field-container">
+            <label class="modal__field-label">Имя</label>
+            <div class="modal__field">
+              <input class="modal__input" type="text" name="user-name" />
+              <svg class="modal__input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-field">
-            <label class="form-field__label">Телефон</label>
-            <div class="field">
-              <input class="field__input" type="tel" name="tel" />
-              <svg class="field__icon" width="13" height="13">
+          <div class="modal__field-container">
+            <label class="modal__field-label">Телефон</label>
+            <div class="modal__field">
+              <input class="modal__input" type="tel" name="tel" />
+              <svg class="modal__input-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-field">
-            <label class="form-field__label">Почта</label>
-            <div class="field">
-              <input class="field__input" type="email" name="mail" />
-              <svg class="field__icon" width="15" height="12">
+          <div class="modal__field-container">
+            <label class="modal__field-label">Почта</label>
+            <div class="modal__field">
+              <input class="modal__input" type="email" name="mail" />
+              <svg class="modal__input-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-field">
-            <label class="form-field__label"> Комментарий</label>
+          <div class="modal__field-container">
+            <label class="modal__field-label"> Комментарий</label>
             <textarea
-              class="form-field__textarea"
+              class="modal__textarea"
               name="comment"
               rows="6"
               placeholder="Введите текст"
             ></textarea>
           </div>
 
-          <div class="checkbox">
-            <label class="checkbox__label">
+          <div class="modal__checkbox">
+            <label class="modal__checkbox-label">
               <input
-                class="checkbox__input visually-hidden"
+                class="modal__checkbox-input visually-hidden"
                 type="checkbox"
                 name="terms"
               />
-              <span class="checkbox__icon"></span>
+              <span class="modal__checkbox-icon"></span>
               Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a class="checkbox__link" href="">Условия договора</a>
+              <a class="modal__checkbox-link" href="">Условия договора</a>
             </label>
           </div>
 
@@ -625,5 +648,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
