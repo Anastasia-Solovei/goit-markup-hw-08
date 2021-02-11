@@ -52,31 +52,6 @@
   }
 }
 
-.button-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: $primary-bcg-color;
-  cursor: pointer;
-  transition: fill $primary-duration$timing-function;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}
-
 .button__overlay {
   display: flex;
   align-items: center;
