@@ -1,11 +1,5 @@
 /* Hero */
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-
   background-color: $hero-bcg-color;
   background-image: linear-gradient(
       to right,
@@ -16,6 +10,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
 
   @media screen and (min-width: $desktop) {
     max-width: 1600px;
