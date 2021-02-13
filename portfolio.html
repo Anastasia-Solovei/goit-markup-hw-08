@@ -14,35 +14,39 @@
   </head>
 
   <body>
-    <!-----------------------------Шапка сайта-------------------------------------->
-    <header class="page-header section">
-      <div class="page-header__container container">
-        <a href="/index.html" class="page-header__logo logo"
-          >Web<span class="logo__text">Studio</span>
-        </a>
+    <!-- Page-header -->
+    <header class="page-header container">
+      <a href="/index.html" class="page-header__logo logo"
+        >Web<span class="logo__text">Studio</span>
+      </a>
 
-        <!--------------------------Меню навигации------------------------------------>
+      <div
+        class="page-header__menu-container page-header__menu-container--is-open"
+        id="page-header__menu-container"
+        data-menu
+      >
+        <!-- Main navigation -->
         <nav class="page-header__nav">
           <ul class="page-header__list list">
             <li class="page-header__link-item">
-              <a class="page-header__link" href="./index.html">Студия</a>
+              <a href="./index.html" class="page-header__link">Студия</a>
             </li>
 
             <li class="page-header__link-item">
               <a
-                class="page-header__link page-header__link--current"
                 href="./portfolio.html"
+                class="page-header__link page-header__link--current"
                 >Портфолио</a
               >
             </li>
 
             <li class="page-header__link-item">
-              <a class="page-header__link" href="">Контакты</a>
+              <a href="" class="page-header__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <!------------------------------Контакты------------------------------------->
+        <!-- Contacts -->
         <ul class="page-header__contacts list">
           <li class="page-header__contact-item">
             <a
@@ -61,7 +65,10 @@
           </li>
 
           <li class="page-header__contact-item">
-            <a class="page-header__contact-link" href="tel:+380961111111">
+            <a
+              class="page-header__contact-link page-header__contact-link--accent"
+              href="tel:+380961111111"
+            >
               <svg
                 class="page-header__contact-icon page-header__contact-icon--start"
                 width="10"
@@ -74,21 +81,53 @@
           </li>
         </ul>
 
-        <button class="page-header__menu">
-          <svg class="page-header__menu-icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
+        <!-- Social links -->
+        <ul class="page-header__social list">
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">Instagram</a>
+          </li>
+
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">Twitter</a>
+          </li>
+
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">Facebook</a>
+          </li>
+
+          <li class="page-header__social-item">
+            <a href="" class="page-header__social-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
+
+      <button
+        class="page-header__menu page-header__menu--is-open"
+        type="button"
+        aria-expanded="false"
+        aria-controls="page-header__menu-container"
+        data-menu-button
+      >
+        <svg width="24" height="16" area-label="Переключатель мобильного меню">
+          <use
+            class="page-header__icon-cross"
+            href="./images/icons.svg#icon-cross"
+          ></use>
+          <use
+            class="page-header__icon-burger"
+            href="./images/icons.svg#icon-burger"
+          ></use>
+        </svg>
+      </button>
     </header>
 
     <main>
       <!---------------------------Секция портфолио-------------------------------->
       <h1 class="visually-hidden">Портфолио</h1>
 
-      <section class="portfolio section">
+      <section class="portfolio">
         <div class="project container">
-          <!-- Фильтры -->
+          <!-- Filters -->
           <ul class="filters list">
             <li class="filters__item">
               <button class="button--filter button" type="button">Все</button>
@@ -124,7 +163,7 @@
                   <img
                     src="./images/project1.jpg"
                     alt="Ноутбук, на котором открыт веб-сайт"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -148,7 +187,7 @@
                   <img
                     src="./images/project2.jpg"
                     alt="Игроки двух баскетбольных команд"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -174,7 +213,7 @@
                   <img
                     src="./images/project3.jpg"
                     alt="Логотип ресторана, в виде рыбы"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -200,7 +239,7 @@
                   <img
                     src="./images/project4.jpg"
                     alt="Большие наушники черного цвета"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -226,7 +265,7 @@
                   <img
                     src="./images/project5.jpg"
                     alt="Две коробки. Белая и бежевая."
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -252,7 +291,7 @@
                   <img
                     src="./images/project6.jpg"
                     alt="Монитор, на котором открыт веб-сайт"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -278,7 +317,7 @@
                   <img
                     src="./images/project7.jpg"
                     alt="Разворот журнала со статьями и красочными картинками"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -330,7 +369,7 @@
                   <img
                     src="./images/project9.jpg"
                     alt="Человек печатает на клавиатуре ноутбука"
-                    width="370"
+                    width=""
                   />
                   <div class="project__description">
                     <p class="project__description-text section__text">
@@ -354,30 +393,30 @@
       </section>
     </main>
 
-    <!----------------------------Подвал сайта-------------------------------------->
-    <footer class="page-footer section section--page-footer">
-      <div class="container footer">
-        <div class="page-footer__content">
-          <a href="/index.html" class="logo page-footer__logo"
+    <!-- Page footer -->
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__address">
+          <a href="/index.html" class="page-footer__logo logo"
             >Web<span class="logo__text logo__text--inverse">Studio</span>
           </a>
 
           <address>
-            <span class="address">г. Киев, пр-т Леси Украинки, 26<br /></span>
+            <span class="page-footer__company-location"
+              >г. Киев, пр-т Леси Украинки, 26</span
+            >
 
-            <ul class="contact-list contact-list--footer list">
-              <li class="contact-list__item contact-list__item--footer">
+            <ul class="page-footer__contacts list">
+              <li class="page-footer__contact-item">
                 <a
-                  class="contact-list__link contact-list__link--footer"
+                  class="page-footer__contact-link"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
 
-              <li class="contact-list__item contact-list__item--footer">
-                <a
-                  class="contact-list__link contact-list__link--footer"
-                  href="tel:+380991111111"
+              <li class="page-footer__contact-item">
+                <a class="page-footer__contact-link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -385,37 +424,37 @@
           </address>
         </div>
 
-        <div class="social__content">
-          <p class="social__label section__text">присоединяйтесь</p>
+        <div class="page-footer__social">
+          <p class="section__label">присоединяйтесь</p>
 
-          <ul class="social__list social__list--footer list">
-            <li class="social__item social__item--footer">
-              <a href="" class="social__link social__link--footer">
-                <svg class="social__icon social__icon--footer">
+          <ul class="social__list list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
                   <use href="./images/icons.svg#icon-instagram-f"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social__item social__item--footer">
-              <a href="" class="social__link social__link--footer">
-                <svg class="social__icon social__icon--footer">
+            <li class="social__item">
+              <a href="" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
                   <use href="./images/icons.svg#icon-twitter-f"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social__item social__item--footer">
-              <a href="" class="social__link social__link--footer">
-                <svg class="social__icon social__icon--footer">
+            <li class="social__item">
+              <a href="" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
                   <use href="./images/icons.svg#icon-facebook-f"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social__item social__item--footer">
-              <a href="" class="social__link social__link--footer">
-                <svg class="social__icon social__icon--footer">
+            <li class="social__item">
+              <a href="" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
                   <use href="./images/icons.svg#icon-linkedin-f"></use>
                 </svg>
               </a>
@@ -423,20 +462,18 @@
           </ul>
         </div>
 
-        <form class="newsletter-form newsletter-form--left" autocomplete="off">
-          <p class="newsletter-form__label section__text">
-            Подпишитесь на рассылку
-          </p>
+        <form class="newsletter" autocomplete="off">
+          <p class="section__label">Подпишитесь на рассылку</p>
 
-          <div class="form">
+          <div class="newsletter__form">
             <input
-              class="form__input"
+              class="newsletter__input"
               type="email"
               name="mail"
               placeholder="E-mail"
             />
-            <button class="button--newsletter button" type="submit">
-              <div class="button__overlay">
+            <button class="button button--submit" type="submit">
+              <div class="button__content">
                 Подписаться
                 <svg
                   class="button__icon button__icon--end"
@@ -451,5 +488,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
