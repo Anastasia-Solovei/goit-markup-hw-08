@@ -1,23 +1,65 @@
-/* Подвал сайта */
+/* Page-footer */
 .page-footer {
   background-color: $footer-bcg-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
-  &__content {
-    display: inline-flex;
+  &__container {
+    display: flex;
     flex-direction: column;
+    //align-items: center;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
   }
 
   &__logo {
-    display: inline-block;
     margin-bottom: 20px;
   }
-}
 
-.address {
-  display: inline-block;
-  margin-bottom: 9px;
-  color: $white-color;
-  font-style: normal;
+  &__company-location {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: $white-color;
+    font-style: normal;
+    line-height: 1.71;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__contact-item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__contact-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+    transition: color $primary-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__social {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
