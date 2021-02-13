@@ -200,8 +200,13 @@
         <ul class="service__list list">
           <li class="service__item">
             <img
-              src="./images/img1.jpg"
-              alt="человек занимается веб разработкой"
+              src="./images/service/optimisized-jpg/activity__1.jpg"
+              srcset="
+                ./images/service/optimisized-webp/service__1.webp    1x,
+                ./images/service/optimisized-webp/service__1@2x.webp 2x,
+                ./images/service/optimisized-jpg/service__1@2x.jpg   2x
+              "
+              alt="ПК"
               width="370"
             />
             <div class="service__label-container">
@@ -211,8 +216,13 @@
 
           <li class="service__item">
             <img
-              src="./images/img2.jpg"
-              alt="человек занимается разработкой мобильных приложений"
+              src="./images/service/optimisized-jpg/activity__2.jpg"
+              srcset="
+                ./images/service/optimisized-webp/service__2.webp    1x,
+                ./images/service/optimisized-webp/service__2@2x.webp 2x,
+                ./images/service/optimisized-jpg/service__2@2x.jpg   2x
+              "
+              alt="ПК"
               width="370"
             />
             <div class="service__label-container">
@@ -222,8 +232,13 @@
 
           <li class="service__item">
             <img
-              src="./images/img3.jpg"
-              alt="человек занимается созданием дизайнов"
+              src="./images/service/optimisized-jpg/activity__3.jpg"
+              srcset="
+                ./images/service/optimisized-webp/service__3.webp    1x,
+                ./images/service/optimisized-webp/service__3@2x.webp 2x,
+                ./images/service/optimisized-jpg/service__3@2x.jpg   2x
+              "
+              alt="ПК"
               width="370"
             />
             <div class="service__label-container">
@@ -239,12 +254,46 @@
 
         <ul class="team__list list">
           <li class="team__member">
-            <img
-              src="./images/team1.jpg"
-              alt="молодой мужчина в коричневой рубашке и очках"
-              width="270"
-              class="team__member-img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__1__mob.webp    1x,
+                  ./images/team/optimisized-webp/team__1__mob@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__1__mob@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__1__mob.jpg      1x,
+                  ./images/team/optimisized-jpg/team__1__mob@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__1__mob@3x.jpg   3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__1__tab.webp    1x,
+                  ./images/team/optimisized-webp/team__1__tab@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__1__tab@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__1__tab.jpg      1x,
+                  ./images/team/optimisized-jpg/team__1__tab@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__1__tab@3x.jpg   3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__1__desk.webp,
+                  ./images/team/optimisized-jpg/team__1__desk.jpg
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <img
+                class="team__photo"
+                src="
+                            ./images/team/optimisized-jpg/team__1__tab.jpg"
+                alt="Фото наша команда 1"
+              />
+            </picture>
             <h3 class="team__subheading section__subheading">
               Игорь Демьяненко
             </h3>
@@ -285,12 +334,46 @@
           </li>
 
           <li class="team__member">
-            <img
-              src="./images/team2.jpg"
-              alt="молодая девушка со светлыми волосами в очках"
-              width="270"
-              class="team__member-img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__2__mob.webp    1x,
+                  ./images/team/optimisized-webp/team__2__mob@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__2__mob@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__2__mob.jpg      1x,
+                  ./images/team/optimisized-jpg/team__2__mob@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__2__mob@3x.jpg   3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__2__tab.webp    1x,
+                  ./images/team/optimisized-webp/team__2__tab@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__2__tab@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__2__tab.jpg      1x,
+                  ./images/team/optimisized-jpg/team__2__tab@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__2__tab@3x.jpg   3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__2__desk.webp,
+                  ./images/team/optimisized-jpg/team__2__desk.jpg
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <img
+                class="team__photo"
+                src="
+                            ./images/team/optimisized-jpg/team__2__tab.jpg"
+                alt="Фото наша команда 2"
+              />
+            </picture>
             <h3 class="team__subheading section__subheading">Ольга Репина</h3>
             <p class="team__spec" lang="en">Frontend Developer</p>
             <ul class="social__list list">
@@ -329,12 +412,46 @@
           </li>
 
           <li class="team__member">
-            <img
-              src="./images/team3.jpg"
-              alt="молодой мужчина в светлой рубашке"
-              width="270"
-              class="team__member-img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__3__mob.webp    1x,
+                  ./images/team/optimisized-webp/team__3__mob@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__3__mob@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__3__mob.jpg      1x,
+                  ./images/team/optimisized-jpg/team__3__mob@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__3__mob@3x.jpg   3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__3__tab.webp    1x,
+                  ./images/team/optimisized-webp/team__3__tab@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__3__tab@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__3__tab.jpg      1x,
+                  ./images/team/optimisized-jpg/team__3__tab@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__3__tab@3x.jpg   3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__3__desk.webp,
+                  ./images/team/optimisized-jpg/team__3__desk.jpg
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <img
+                class="team__photo"
+                src="
+                            ./images/team/optimisized-jpg/team__3__tab.jpg"
+                alt="Фото наша команда 3"
+              />
+            </picture>
             <h3 class="team__subheading section__subheading">
               Николай Тарасов
             </h3>
@@ -375,12 +492,46 @@
           </li>
 
           <li class="team__member">
-            <img
-              src="./images/team4.jpg"
-              alt="молодой мужчина в черной футболке и очках"
-              width="270"
-              class="team__member-img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__4__mob.webp    1x,
+                  ./images/team/optimisized-webp/team__4__mob@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__4__mob@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__4__mob.jpg      1x,
+                  ./images/team/optimisized-jpg/team__4__mob@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__4__mob@3x.jpg   3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__4__tab.webp    1x,
+                  ./images/team/optimisized-webp/team__4__tab@2x.webp 2x,
+                  ./images/team/optimisized-webp/team__4__tab@3x.webp 3x,
+                  ./images/team/optimisized-jpg/team__4__tab.jpg      1x,
+                  ./images/team/optimisized-jpg/team__4__tab@2x.jpg   2x,
+                  ./images/team/optimisized-jpg/team__4__tab@3x.jpg   3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/optimisized-webp/team__4__desk.webp,
+                  ./images/team/optimisized-jpg/team__4__desk.jpg
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <img
+                class="team__photo"
+                src="
+                            ./images/team/optimisized-jpg/team__4__tab.jpg"
+                alt="Фото наша команда 4"
+              />
+            </picture>
             <h3 class="team__subheading section__subheading">Михаил Ермаков</h3>
             <p class="team__spec" lang="en">UI Designer</p>
             <ul class="social__list list">
