@@ -204,8 +204,8 @@
               alt="человек занимается веб разработкой"
               width="370"
             />
-            <div class="service__label">
-              <p class="service__text section__text">Десктопные приложения</p>
+            <div class="service__label-container">
+              <p class="service__label section__label">Десктопные приложения</p>
             </div>
           </li>
 
@@ -215,8 +215,8 @@
               alt="человек занимается разработкой мобильных приложений"
               width="370"
             />
-            <div class="service__label">
-              <p class="service__text section__text">Мобильные приложения</p>
+            <div class="service__label-container">
+              <p class="service__label section__label">Мобильные приложения</p>
             </div>
           </li>
 
@@ -226,8 +226,8 @@
               alt="человек занимается созданием дизайнов"
               width="370"
             />
-            <div class="service__label">
-              <p class="service__text section__text">Дизайнерские решения</p>
+            <div class="service__label-container">
+              <p class="service__label section__label">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
@@ -477,99 +477,99 @@
     </main>
 
     <!-- Page footer -->
-    <footer class="page-footer container">
-      <div class="page-footer__content">
-        <a href="/index.html" class="logo page-footer__logo"
-          >Web<span class="logo__text logo__text--inverse">Studio</span>
-        </a>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__address">
+          <a href="/index.html" class="page-footer__logo logo"
+            >Web<span class="logo__text logo__text--inverse">Studio</span>
+          </a>
 
-        <address>
-          <span class="address">г. Киев, пр-т Леси Украинки, 26<br /></span>
+          <address>
+            <span class="page-footer__company-location"
+              >г. Киев, пр-т Леси Украинки, 26</span
+            >
 
-          <ul class="contact-list contact-list--footer list">
-            <li class="contact-list__item contact-list__item--footer">
-              <a
-                class="contact-list__link contact-list__link--footer"
-                href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <ul class="page-footer__contacts list">
+              <li class="page-footer__contact-item">
+                <a
+                  class="page-footer__contact-link"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+
+              <li class="page-footer__contact-item">
+                <a class="page-footer__contact-link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="page-footer__social">
+          <p class="section__label">присоединяйтесь</p>
+
+          <ul class="social__list list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
+                  <use href="./images/icons.svg#icon-instagram-f"></use>
+                </svg>
+              </a>
             </li>
 
-            <li class="contact-list__item contact-list__item--footer">
-              <a
-                class="contact-list__link contact-list__link--footer"
-                href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
+            <li class="social__item">
+              <a href="" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
+                  <use href="./images/icons.svg#icon-twitter-f"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a href="" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
+                  <use href="./images/icons.svg#icon-facebook-f"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a href="" class="social__link social__link--circle">
+                <svg class="social__icon social__icon--circle">
+                  <use href="./images/icons.svg#icon-linkedin-f"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-
-      <div class="social__content">
-        <p class="social__label section__text">присоединяйтесь</p>
-
-        <ul class="social__list social__list--footer list">
-          <li class="social__item social__item--footer">
-            <a href="" class="social__link social__link--footer">
-              <svg class="social__icon social__icon--footer">
-                <use href="./images/icons.svg#icon-instagram-f"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item social__item--footer">
-            <a href="" class="social__link social__link--footer">
-              <svg class="social__icon social__icon--footer">
-                <use href="./images/icons.svg#icon-twitter-f"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item social__item--footer">
-            <a href="" class="social__link social__link--footer">
-              <svg class="social__icon social__icon--footer">
-                <use href="./images/icons.svg#icon-facebook-f"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item social__item--footer">
-            <a href="" class="social__link social__link--footer">
-              <svg class="social__icon social__icon--footer">
-                <use href="./images/icons.svg#icon-linkedin-f"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <form class="newsletter-form newsletter-form--left" autocomplete="off">
-        <p class="newsletter-form__label section__text">
-          Подпишитесь на рассылку
-        </p>
-
-        <div class="form">
-          <input
-            class="form__input"
-            type="email"
-            name="mail"
-            placeholder="E-mail"
-          />
-          <button class="button--newsletter button" type="submit">
-            <div class="button__overlay">
-              Подписаться
-              <svg
-                class="button__icon button__icon--end"
-                width="24"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </div>
-          </button>
         </div>
-      </form>
+
+        <form class="newsletter" autocomplete="off">
+          <p class="section__label">Подпишитесь на рассылку</p>
+
+          <div class="newsletter__form">
+            <input
+              class="newsletter__input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button class="button button--submit" type="submit">
+              <div class="button__content">
+                Подписаться
+                <svg
+                  class="button__icon button__icon--end"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
     </footer>
 
     <!-- Modal window -->
