@@ -17,7 +17,7 @@
       left: 0;
       width: 100%;
       padding: 48px 40px;
-      z-index: 0;
+      z-index: 1;
       background: #ffffff;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -210,6 +210,14 @@
     }
   }
 
+  &__social-item {
+    &:not(:last-child) {
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+
   &__social-link {
     font-weight: $secondary-font-weight;
     font-size: 18px;
@@ -217,14 +225,6 @@
     letter-spacing: 0.02em;
     color: #2196f3;
     text-decoration: none;
-
-    &::after {
-      content: '';
-      margin-left: 10px;
-      margin-right: 10px;
-      height: 100%;
-      border-left: 1px solid rgba(33, 33, 33, 0.2);
-    }
   }
 
   &__menu {
@@ -236,7 +236,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
 
     &:hover,
     &:focus {
