@@ -386,13 +386,18 @@ h2 {
 
 /* Контейнер */
 .container {
-  width: 480px;
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1032,15 +1037,17 @@ h2 {
 }
 
 /* Service */
-.service {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1092,9 +1099,14 @@ h2 {
 
 /* Team */
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 480px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1805,9 +1817,18 @@ h2 {
 }
 
 /* Портфолио*/
-.portfolio {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 480px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filters {
