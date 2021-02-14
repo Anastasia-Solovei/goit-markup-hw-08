@@ -1,13 +1,15 @@
 /* Service */
 .service {
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 94px;
-  }
+  &__container {
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 94px;
+    }
 
-  @media screen and (max-width: 1199px) {
-    display: none;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
 
   &__heading {

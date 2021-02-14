@@ -2,14 +2,16 @@
 .team {
   background-color: $secondary-bcg-color;
 
-  @media screen and (min-width: $mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  &__container {
+    @media screen and (min-width: $mobile) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   &__heading {

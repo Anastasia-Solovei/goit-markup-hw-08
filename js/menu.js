@@ -4,7 +4,7 @@
 
   menuBtnRef.addEventListener("click", () => {
     const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
     menuBtnRef.classList.toggle("page-header__menu--is-open");
     menuBtnRef.setAttribute("aria-expanded", !expanded);

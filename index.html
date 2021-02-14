@@ -15,614 +15,640 @@
 
   <body>
     <!-- Page-header -->
-    <header class="page-header container">
-      <a href="/index.html" class="page-header__logo logo"
-        >Web<span class="logo__text">Studio</span>
-      </a>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a href="/index.html" class="page-header__logo logo"
+          >Web<span class="logo__text">Studio</span>
+        </a>
 
-      <div
-        class="page-header__menu-container page-header__menu-container--is-open"
-        id="page-header__menu-container"
-        data-menu
-      >
-        <!-- Main navigation -->
-        <nav class="page-header__nav">
-          <ul class="page-header__list list">
-            <li class="page-header__link-item">
+        <div
+          class="page-header__menu-container page-header__menu-container--is-open"
+          id="page-header__menu-container"
+          data-menu
+        >
+          <!-- Main navigation -->
+          <nav class="page-header__nav">
+            <ul class="page-header__list list">
+              <li class="page-header__link-item">
+                <a
+                  href="./index.html"
+                  class="page-header__link page-header__link--current"
+                  >Студия</a
+                >
+              </li>
+
+              <li class="page-header__link-item">
+                <a href="./portfolio.html" class="page-header__link"
+                  >Портфолио</a
+                >
+              </li>
+
+              <li class="page-header__link-item">
+                <a href="" class="page-header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Contacts -->
+          <ul class="page-header__contacts list">
+            <li class="page-header__contact-item">
               <a
-                href="./index.html"
-                class="page-header__link page-header__link--current"
-                >Студия</a
+                class="page-header__contact-link"
+                href="mailto:info@devstudio.com"
               >
+                <svg
+                  class="page-header__contact-icon page-header__contact-icon--start"
+                  width="16"
+                  height="12"
+                >
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
 
-            <li class="page-header__link-item">
-              <a href="./portfolio.html" class="page-header__link">Портфолио</a>
-            </li>
-
-            <li class="page-header__link-item">
-              <a href="" class="page-header__link">Контакты</a>
+            <li class="page-header__contact-item">
+              <a
+                class="page-header__contact-link page-header__contact-link--accent"
+                href="tel:+380961111111"
+              >
+                <svg
+                  class="page-header__contact-icon page-header__contact-icon--start"
+                  width="10"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
 
-        <!-- Contacts -->
-        <ul class="page-header__contacts list">
-          <li class="page-header__contact-item">
-            <a
-              class="page-header__contact-link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg
-                class="page-header__contact-icon page-header__contact-icon--start"
-                width="16"
-                height="12"
-              >
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
+          <!-- Social links -->
+          <ul class="page-header__social list">
+            <li class="page-header__social-item">
+              <a href="" class="page-header__social-link">Instagram</a>
+            </li>
 
-          <li class="page-header__contact-item">
-            <a
-              class="page-header__contact-link page-header__contact-link--accent"
-              href="tel:+380961111111"
-            >
-              <svg
-                class="page-header__contact-icon page-header__contact-icon--start"
-                width="10"
-                height="16"
-              >
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+            <li class="page-header__social-item">
+              <a href="" class="page-header__social-link">Twitter</a>
+            </li>
 
-        <!-- Social links -->
-        <ul class="page-header__social list">
-          <li class="page-header__social-item">
-            <a href="" class="page-header__social-link">Instagram</a>
-          </li>
+            <li class="page-header__social-item">
+              <a href="" class="page-header__social-link">Facebook</a>
+            </li>
 
-          <li class="page-header__social-item">
-            <a href="" class="page-header__social-link">Twitter</a>
-          </li>
-
-          <li class="page-header__social-item">
-            <a href="" class="page-header__social-link">Facebook</a>
-          </li>
-
-          <li class="page-header__social-item">
-            <a href="" class="page-header__social-link">LinkedIn</a>
-          </li>
-        </ul>
+            <li class="page-header__social-item">
+              <a href="" class="page-header__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="page-header__menu page-header__menu--is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="page-header__menu-container"
+          data-menu-button
+        >
+          <svg
+            width="24"
+            height="16"
+            area-label="Переключатель мобильного меню"
+          >
+            <use
+              class="page-header__icon-burger"
+              href="./images/icons.svg#icon-burger"
+            ></use>
+            <use
+              class="page-header__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
       </div>
-      <button
-        class="page-header__menu page-header__menu--is-open"
-        type="button"
-        aria-expanded="false"
-        aria-controls="page-header__menu-container"
-        data-menu-button
-      >
-        <svg width="24" height="16" area-label="Переключатель мобильного меню">
-          <use
-            class="page-header__icon-cross"
-            href="./images/icons.svg#icon-cross"
-          ></use>
-          <use
-            class="page-header__icon-burger"
-            href="./images/icons.svg#icon-burger"
-          ></use>
-        </svg>
-      </button>
     </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero container">
-        <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero__button button" type="button" data-modal-open>
-          Заказать услугу
-        </button>
+      <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero__button button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
       </section>
 
       <!-- Features -->
-      <section class="feature container">
-        <h2 class="visually-hidden">Особенности компании</h2>
+      <section class="feature">
+        <div class="feature__container container">
+          <h2 class="visually-hidden">Особенности компании</h2>
 
-        <ul class="feature__list list">
-          <li class="feature__item">
-            <div class="feature__card">
-              <svg class="feature__icon">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title section__subheading">
-              Внимание к деталям
-            </h3>
-            <p class="">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
+          <ul class="feature__list list">
+            <li class="feature__item">
+              <div class="feature__card">
+                <svg class="feature__icon">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title section__subheading">
+                Внимание к деталям
+              </h3>
+              <p class="">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
 
-          <li class="feature__item">
-            <div class="feature__card">
-              <svg class="feature__icon">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title section__subheading">Пунктуальность</h3>
-            <p class="">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
+            <li class="feature__item">
+              <div class="feature__card">
+                <svg class="feature__icon">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title section__subheading">Пунктуальность</h3>
+              <p class="">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
 
-          <li class="feature__item">
-            <div class="feature__card">
-              <svg class="feature__icon">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title section__subheading">Планирование</h3>
-            <p class="">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
+            <li class="feature__item">
+              <div class="feature__card">
+                <svg class="feature__icon">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title section__subheading">Планирование</h3>
+              <p class="">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
 
-          <li class="feature__item">
-            <div class="feature__card">
-              <svg class="feature__icon">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title section__subheading">
-              Современные технологии
-            </h3>
-            <p class="">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+            <li class="feature__item">
+              <div class="feature__card">
+                <svg class="feature__icon">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title section__subheading">
+                Современные технологии
+              </h3>
+              <p class="">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Service -->
-      <section class="service container">
-        <h2 class="service__heading section__heading">Чем мы занимаемся</h2>
+      <section class="service">
+        <div class="service__container container">
+          <h2 class="service__heading section__heading">Чем мы занимаемся</h2>
 
-        <ul class="service__list list">
-          <li class="service__item">
-            <img
-              src="./images/service/optimisized-jpg/activity__1.jpg"
-              srcset="
-                ./images/service/optimisized-webp/service__1.webp    1x,
-                ./images/service/optimisized-webp/service__1@2x.webp 2x,
-                ./images/service/optimisized-jpg/service__1@2x.jpg   2x
-              "
-              alt="ПК"
-              width="370"
-            />
-            <div class="service__label-container">
-              <p class="service__label section__label">Десктопные приложения</p>
-            </div>
-          </li>
+          <ul class="service__list list">
+            <li class="service__item">
+              <img
+                src="./images/service/optimisized-jpg/activity__1.jpg"
+                srcset="
+                  ./images/service/optimisized-webp/service__1.webp    1x,
+                  ./images/service/optimisized-webp/service__1@2x.webp 2x,
+                  ./images/service/optimisized-jpg/service__1@2x.jpg   2x
+                "
+                alt="ПК"
+                width="370"
+              />
+              <div class="service__label-container">
+                <p class="service__label section__label">
+                  Десктопные приложения
+                </p>
+              </div>
+            </li>
 
-          <li class="service__item">
-            <img
-              src="./images/service/optimisized-jpg/activity__2.jpg"
-              srcset="
-                ./images/service/optimisized-webp/service__2.webp    1x,
-                ./images/service/optimisized-webp/service__2@2x.webp 2x,
-                ./images/service/optimisized-jpg/service__2@2x.jpg   2x
-              "
-              alt="ПК"
-              width="370"
-            />
-            <div class="service__label-container">
-              <p class="service__label section__label">Мобильные приложения</p>
-            </div>
-          </li>
+            <li class="service__item">
+              <img
+                src="./images/service/optimisized-jpg/activity__2.jpg"
+                srcset="
+                  ./images/service/optimisized-webp/service__2.webp    1x,
+                  ./images/service/optimisized-webp/service__2@2x.webp 2x,
+                  ./images/service/optimisized-jpg/service__2@2x.jpg   2x
+                "
+                alt="ПК"
+                width="370"
+              />
+              <div class="service__label-container">
+                <p class="service__label section__label">
+                  Мобильные приложения
+                </p>
+              </div>
+            </li>
 
-          <li class="service__item">
-            <img
-              src="./images/service/optimisized-jpg/activity__3.jpg"
-              srcset="
-                ./images/service/optimisized-webp/service__3.webp    1x,
-                ./images/service/optimisized-webp/service__3@2x.webp 2x,
-                ./images/service/optimisized-jpg/service__3@2x.jpg   2x
-              "
-              alt="ПК"
-              width="370"
-            />
-            <div class="service__label-container">
-              <p class="service__label section__label">Дизайнерские решения</p>
-            </div>
-          </li>
-        </ul>
+            <li class="service__item">
+              <img
+                src="./images/service/optimisized-jpg/activity__3.jpg"
+                srcset="
+                  ./images/service/optimisized-webp/service__3.webp    1x,
+                  ./images/service/optimisized-webp/service__3@2x.webp 2x,
+                  ./images/service/optimisized-jpg/service__3@2x.jpg   2x
+                "
+                alt="ПК"
+                width="370"
+              />
+              <div class="service__label-container">
+                <p class="service__label section__label">
+                  Дизайнерские решения
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Team -->
-      <section class="team container">
-        <h2 class="team__heading section__heading">Наша команда</h2>
+      <section class="team">
+        <div class="team__container container">
+          <h2 class="team__heading section__heading">Наша команда</h2>
 
-        <ul class="team__list list">
-          <li class="team__member">
-            <picture>
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__1__mob.webp    1x,
-                  ./images/team/optimisized-webp/team__1__mob@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__1__mob@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__1__mob.jpg      1x,
-                  ./images/team/optimisized-jpg/team__1__mob@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__1__mob@3x.jpg   3x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__1__tab.webp    1x,
-                  ./images/team/optimisized-webp/team__1__tab@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__1__tab@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__1__tab.jpg      1x,
-                  ./images/team/optimisized-jpg/team__1__tab@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__1__tab@3x.jpg   3x
-                "
-                media="(min-width: 768px) and (max-width: 1199px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__1__desk.webp,
-                  ./images/team/optimisized-jpg/team__1__desk.jpg
-                "
-                media="(min-width: 1200px)"
-                type="image/webp"
-              />
-              <img
-                class="team__photo"
-                src="
+          <ul class="team__list list">
+            <li class="team__member">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__1__mob.webp    1x,
+                    ./images/team/optimisized-webp/team__1__mob@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__1__mob@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__1__mob.jpg      1x,
+                    ./images/team/optimisized-jpg/team__1__mob@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__1__mob@3x.jpg   3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__1__tab.webp    1x,
+                    ./images/team/optimisized-webp/team__1__tab@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__1__tab@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__1__tab.jpg      1x,
+                    ./images/team/optimisized-jpg/team__1__tab@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__1__tab@3x.jpg   3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__1__desk.webp,
+                    ./images/team/optimisized-jpg/team__1__desk.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team__photo"
+                  src="
                             ./images/team/optimisized-jpg/team__1__tab.jpg"
-                alt="Фото наша команда 1"
-              />
-            </picture>
-            <h3 class="team__subheading section__subheading">
-              Игорь Демьяненко
-            </h3>
-            <p class="team__spec" lang="en">Product Designer</p>
-            <ul class="social__list list">
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+                  alt="Фото наша команда 1"
+                />
+              </picture>
+              <h3 class="team__subheading section__subheading">
+                Игорь Демьяненко
+              </h3>
+              <p class="team__spec" lang="en">Product Designer</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="team__member">
-            <picture>
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__2__mob.webp    1x,
-                  ./images/team/optimisized-webp/team__2__mob@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__2__mob@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__2__mob.jpg      1x,
-                  ./images/team/optimisized-jpg/team__2__mob@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__2__mob@3x.jpg   3x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__2__tab.webp    1x,
-                  ./images/team/optimisized-webp/team__2__tab@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__2__tab@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__2__tab.jpg      1x,
-                  ./images/team/optimisized-jpg/team__2__tab@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__2__tab@3x.jpg   3x
-                "
-                media="(min-width: 768px) and (max-width: 1199px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__2__desk.webp,
-                  ./images/team/optimisized-jpg/team__2__desk.jpg
-                "
-                media="(min-width: 1200px)"
-                type="image/webp"
-              />
-              <img
-                class="team__photo"
-                src="
+            <li class="team__member">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__2__mob.webp    1x,
+                    ./images/team/optimisized-webp/team__2__mob@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__2__mob@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__2__mob.jpg      1x,
+                    ./images/team/optimisized-jpg/team__2__mob@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__2__mob@3x.jpg   3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__2__tab.webp    1x,
+                    ./images/team/optimisized-webp/team__2__tab@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__2__tab@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__2__tab.jpg      1x,
+                    ./images/team/optimisized-jpg/team__2__tab@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__2__tab@3x.jpg   3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__2__desk.webp,
+                    ./images/team/optimisized-jpg/team__2__desk.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team__photo"
+                  src="
                             ./images/team/optimisized-jpg/team__2__tab.jpg"
-                alt="Фото наша команда 2"
-              />
-            </picture>
-            <h3 class="team__subheading section__subheading">Ольга Репина</h3>
-            <p class="team__spec" lang="en">Frontend Developer</p>
-            <ul class="social__list list">
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+                  alt="Фото наша команда 2"
+                />
+              </picture>
+              <h3 class="team__subheading section__subheading">Ольга Репина</h3>
+              <p class="team__spec" lang="en">Frontend Developer</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="team__member">
-            <picture>
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__3__mob.webp    1x,
-                  ./images/team/optimisized-webp/team__3__mob@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__3__mob@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__3__mob.jpg      1x,
-                  ./images/team/optimisized-jpg/team__3__mob@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__3__mob@3x.jpg   3x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__3__tab.webp    1x,
-                  ./images/team/optimisized-webp/team__3__tab@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__3__tab@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__3__tab.jpg      1x,
-                  ./images/team/optimisized-jpg/team__3__tab@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__3__tab@3x.jpg   3x
-                "
-                media="(min-width: 768px) and (max-width: 1199px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__3__desk.webp,
-                  ./images/team/optimisized-jpg/team__3__desk.jpg
-                "
-                media="(min-width: 1200px)"
-                type="image/webp"
-              />
-              <img
-                class="team__photo"
-                src="
+            <li class="team__member">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__3__mob.webp    1x,
+                    ./images/team/optimisized-webp/team__3__mob@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__3__mob@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__3__mob.jpg      1x,
+                    ./images/team/optimisized-jpg/team__3__mob@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__3__mob@3x.jpg   3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__3__tab.webp    1x,
+                    ./images/team/optimisized-webp/team__3__tab@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__3__tab@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__3__tab.jpg      1x,
+                    ./images/team/optimisized-jpg/team__3__tab@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__3__tab@3x.jpg   3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__3__desk.webp,
+                    ./images/team/optimisized-jpg/team__3__desk.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team__photo"
+                  src="
                             ./images/team/optimisized-jpg/team__3__tab.jpg"
-                alt="Фото наша команда 3"
-              />
-            </picture>
-            <h3 class="team__subheading section__subheading">
-              Николай Тарасов
-            </h3>
-            <p class="team__spec" lang="en">Marketing</p>
-            <ul class="social__list list">
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+                  alt="Фото наша команда 3"
+                />
+              </picture>
+              <h3 class="team__subheading section__subheading">
+                Николай Тарасов
+              </h3>
+              <p class="team__spec" lang="en">Marketing</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="team__member">
-            <picture>
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__4__mob.webp    1x,
-                  ./images/team/optimisized-webp/team__4__mob@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__4__mob@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__4__mob.jpg      1x,
-                  ./images/team/optimisized-jpg/team__4__mob@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__4__mob@3x.jpg   3x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__4__tab.webp    1x,
-                  ./images/team/optimisized-webp/team__4__tab@2x.webp 2x,
-                  ./images/team/optimisized-webp/team__4__tab@3x.webp 3x,
-                  ./images/team/optimisized-jpg/team__4__tab.jpg      1x,
-                  ./images/team/optimisized-jpg/team__4__tab@2x.jpg   2x,
-                  ./images/team/optimisized-jpg/team__4__tab@3x.jpg   3x
-                "
-                media="(min-width: 768px) and (max-width: 1199px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/team/optimisized-webp/team__4__desk.webp,
-                  ./images/team/optimisized-jpg/team__4__desk.jpg
-                "
-                media="(min-width: 1200px)"
-                type="image/webp"
-              />
-              <img
-                class="team__photo"
-                src="
+            <li class="team__member">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__4__mob.webp    1x,
+                    ./images/team/optimisized-webp/team__4__mob@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__4__mob@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__4__mob.jpg      1x,
+                    ./images/team/optimisized-jpg/team__4__mob@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__4__mob@3x.jpg   3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__4__tab.webp    1x,
+                    ./images/team/optimisized-webp/team__4__tab@2x.webp 2x,
+                    ./images/team/optimisized-webp/team__4__tab@3x.webp 3x,
+                    ./images/team/optimisized-jpg/team__4__tab.jpg      1x,
+                    ./images/team/optimisized-jpg/team__4__tab@2x.jpg   2x,
+                    ./images/team/optimisized-jpg/team__4__tab@3x.jpg   3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/optimisized-webp/team__4__desk.webp,
+                    ./images/team/optimisized-jpg/team__4__desk.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team__photo"
+                  src="
                             ./images/team/optimisized-jpg/team__4__tab.jpg"
-                alt="Фото наша команда 4"
-              />
-            </picture>
-            <h3 class="team__subheading section__subheading">Михаил Ермаков</h3>
-            <p class="team__spec" lang="en">UI Designer</p>
-            <ul class="social__list list">
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+                  alt="Фото наша команда 4"
+                />
+              </picture>
+              <h3 class="team__subheading section__subheading">
+                Михаил Ермаков
+              </h3>
+              <p class="team__spec" lang="en">UI Designer</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
 
-              <li class="social__item">
-                <a href="" class="social__link">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Clients -->
-      <section class="clients container">
-        <h2 class="clients__heading section__heading">Постоянные клиенты</h2>
+      <section class="clients">
+        <div class="clients__container container">
+          <h2 class="clients__heading section__heading">Постоянные клиенты</h2>
 
-        <ul class="clients__list list">
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="45" height="50">
-                <use href="./images/icons.svg#icon-logo-1"></use>
-              </svg>
-            </a>
-          </li>
+          <ul class="clients__list list">
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="45" height="50">
+                  <use href="./images/icons.svg#icon-logo-1"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="40" height="52">
-                <use href="./images/icons.svg#icon-logo-2"></use>
-              </svg>
-            </a>
-          </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="40" height="52">
+                  <use href="./images/icons.svg#icon-logo-2"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="41" height="43">
-                <use href="./images/icons.svg#icon-logo-3"></use>
-              </svg>
-            </a>
-          </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="41" height="43">
+                  <use href="./images/icons.svg#icon-logo-3"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="80" height="42">
-                <use href="./images/icons.svg#icon-logo-4"></use>
-              </svg>
-            </a>
-          </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="80" height="42">
+                  <use href="./images/icons.svg#icon-logo-4"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="59" height="47">
-                <use href="./images/icons.svg#icon-logo-5"></use>
-              </svg>
-            </a>
-          </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="59" height="47">
+                  <use href="./images/icons.svg#icon-logo-5"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="89" height="45">
-                <use href="./images/icons.svg#icon-logo-6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="89" height="45">
+                  <use href="./images/icons.svg#icon-logo-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -723,78 +749,82 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop container backdrop--hidden" data-modal>
-      <div class="modal">
-        <button class="modal__button" type="button" data-modal-close>
-          <svg height="11" width="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+    <div class="backdrop backdrop--hidden" data-modal>
+      <div class="backdrop__container container">
+        <div class="modal">
+          <button class="modal__button" type="button" data-modal-close>
+            <svg height="11" width="11">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-        <form class="modal__form" autocomplete="off">
-          <h3 class="modal__heading section__subheading">
-            Оставьте свои данные, мы вам перезвоним
-          </h3>
+          <form class="modal__form" autocomplete="off">
+            <h3 class="modal__heading section__subheading">
+              Оставьте свои данные, мы вам перезвоним
+            </h3>
 
-          <div class="modal__field-container">
-            <label class="modal__field-label">Имя</label>
-            <div class="modal__field">
-              <input class="modal__input" type="text" name="user-name" />
-              <svg class="modal__input-icon" width="12" height="12">
-                <use href="./images/icons.svg#icon-name"></use>
-              </svg>
+            <div class="modal__field-container">
+              <label class="modal__field-label">Имя</label>
+              <div class="modal__field">
+                <input class="modal__input" type="text" name="user-name" />
+                <svg class="modal__input-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="modal__field-container">
-            <label class="modal__field-label">Телефон</label>
-            <div class="modal__field">
-              <input class="modal__input" type="tel" name="tel" />
-              <svg class="modal__input-icon" width="13" height="13">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+            <div class="modal__field-container">
+              <label class="modal__field-label">Телефон</label>
+              <div class="modal__field">
+                <input class="modal__input" type="tel" name="tel" />
+                <svg class="modal__input-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="modal__field-container">
-            <label class="modal__field-label">Почта</label>
-            <div class="modal__field">
-              <input class="modal__input" type="email" name="mail" />
-              <svg class="modal__input-icon" width="15" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
+            <div class="modal__field-container">
+              <label class="modal__field-label">Почта</label>
+              <div class="modal__field">
+                <input class="modal__input" type="email" name="mail" />
+                <svg class="modal__input-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="modal__field-container">
-            <label class="modal__field-label"> Комментарий</label>
-            <textarea
-              class="modal__textarea"
-              name="comment"
-              rows="6"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
+            <div class="modal__field-container">
+              <label class="modal__field-label"> Комментарий</label>
+              <textarea
+                class="modal__textarea"
+                name="comment"
+                rows="6"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
 
-          <div class="modal__checkbox">
-            <label class="modal__checkbox-label">
-              <input
-                class="modal__checkbox-input visually-hidden"
-                type="checkbox"
-                name="terms"
-              />
-              <span class="modal__checkbox-icon"></span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a class="modal__checkbox-link" href="">Условия договора</a>
-            </label>
-          </div>
+            <div class="modal__checkbox">
+              <label class="modal__checkbox-label">
+                <input
+                  class="modal__checkbox-input visually-hidden"
+                  type="checkbox"
+                  name="terms"
+                />
+                <span class="modal__checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю&nbsp;
+                <a class="modal__checkbox-link" href="">Условия договора</a>
+              </label>
+            </div>
 
-          <button class="button button--submit" type="submit">Отправить</button>
-        </form>
+            <button class="button button--submit" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
