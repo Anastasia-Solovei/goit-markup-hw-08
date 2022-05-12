@@ -8,6 +8,19 @@ body {
 
 header {
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $tablet) {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+  }
+}
+
+main {
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+  }
 }
 
 img {
