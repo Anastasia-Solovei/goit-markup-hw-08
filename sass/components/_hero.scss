@@ -2,7 +2,7 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  background-color: $hero-bcg-color;
+  background-color: getBcgColor('hero');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -121,7 +121,7 @@
     width: 360px;
     margin-top: 0;
     margin-bottom: 30px;
-    color: $white-color;
+    color: getTextColor('hero');
 
     font-weight: 900;
     font-size: 26px;
@@ -140,8 +140,8 @@
 
   &__button {
     padding: 10px 32px;
-    color: $white-color;
-    background-color: $accent-color;
+    color: getTextColor('hero');
+    background-color: getBcgColor('accent');
     align-items: center;
     letter-spacing: 0.06em;
   }

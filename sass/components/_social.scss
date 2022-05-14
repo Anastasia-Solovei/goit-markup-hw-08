@@ -16,7 +16,7 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  color: $icon-color;
+  color: getIconColor('primary');
   background-color: transparent;
   border-radius: 50%;
   transition: color $primary-duration$timing-function,
@@ -24,19 +24,19 @@
 
   &:hover,
   &:focus {
-    color: $white-color;
-    background-color: $accent-color;
+    color: getIconColor('secondary');
+    background-color: getIconColor('accent');
   }
 
   &--circle {
-    color: $white-color;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: getIconColor('secondary');
+    background-color: getIconColor('footer');
     transition: background-color $primary-duration$timing-function;
   }
 
   &--circle:hover,
   &--circle:focus {
-    background-color: $accent-color;
+    background-color: getIconColor('accent');
   }
 }
 

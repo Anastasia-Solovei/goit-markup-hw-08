@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: getColor('backdrop');
   opacity: 1;
   transition: opacity $primary-duration $timing-function;
 
@@ -39,14 +39,14 @@
     align-items: center;
 
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: $primary-bcg-color;
+    border: 1px solid getColor('btn-border');
+    background: getBcgColor('primary');
     cursor: pointer;
     transition: fill $primary-duration $timing-function;
 
     &:hover,
     &:focus {
-      fill: $accent-color;
+      fill: getTextColor('accent');
     }
   }
 
@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    background-color: $primary-bcg-color;
+    background-color: getBcgColor('primary');
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -91,7 +91,7 @@
   &__textarea {
     padding: 12px 16px;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid getColor('border');
     border-radius: 4px;
     outline: none;
     transition: border-color $primary-duration $timing-function;
@@ -100,11 +100,11 @@
       font-size: $form-modal-text-font-size;
       line-height: 1.67;
       letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
+      color: getTextColor('placeholder');
     }
 
     &:focus {
-      border-color: $accent-color;
+      border-color: getTextColor('accent');
     }
   }
 
@@ -116,7 +116,7 @@
     width: 100%;
     height: 40px;
     padding: 12px 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid getColor(border);
     border-radius: 4px;
     outline: none;
     transition: border-color $primary-duration $timing-function,
@@ -124,8 +124,8 @@
 
     &:focus + &-icon,
     &:focus {
-      fill: $accent-color;
-      border-color: $accent-color;
+      fill: getTextColor('accent');
+      border-color: getTextColor('accent');
     }
   }
 

@@ -26,7 +26,7 @@
     height: 50px;
     margin-bottom: 20px;
     background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid getTextColor('newsletter');
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     outline: none;
@@ -46,7 +46,7 @@
       align-items: center;
       padding-left: 16px;
       padding-right: 16px;
-      color: rgba(255, 255, 255, 0.6);
+      color: getTextColor('newsletter');
       font-size: 16px;
       line-height: 1.25;
     }

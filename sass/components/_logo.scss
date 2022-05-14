@@ -1,6 +1,6 @@
 /* Логотип */
 .logo {
-  color: $accent-color;
+  color: getTextColor('accent');
   font-family: $logo-font-family;
   font-weight: $primary-font-weight;
   font-size: 24px;
@@ -14,12 +14,12 @@
 }
 
 .logo__text {
-  color: $black-color;
+  color: getTextColor('black');
   padding-top: 32px;
   padding-bottom: 32px;
 
   &--inverse {
-    color: $white-color;
+    color: getTextColor('white');
     padding-top: 0;
     padding-bottom: 0;
   }

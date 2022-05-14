@@ -22,7 +22,7 @@
   }
 
   &__checkbox-link {
-    color: $accent-color;
+    color: getTextColor('accent');
     text-decoration-skip-ink: none;
   }
 
@@ -37,7 +37,7 @@
 
   &__checkbox-input {
     &:checked + .modal__checkbox-icon {
-      background-color: $accent-color;
+      background-color: getBcgColor('accent');
       background-image: url(../images/check-on.svg);
     }
   }

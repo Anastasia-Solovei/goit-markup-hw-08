@@ -1,7 +1,7 @@
 /* Page-header */
 .page-header {
-  background-color: $primary-bcg-color;
-  border-bottom: 1px solid #ececec;
+  background-color: getBcgColor('primary');
+  border-bottom: 1px solid getColor('header-border');
 
   &__container {
     position: relative;
@@ -21,7 +21,7 @@
       width: 100%;
       padding: 48px 40px;
       z-index: 1;
-      background: #ffffff;
+      background: getBcgColor('primary');
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -68,15 +68,15 @@
   &__link {
     position: relative;
     display: block;
-    color: $title-text-color;
+    color: getTextColor('title');
     font-weight: $secondary-font-weight;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color $primary-duration$timing-function;
+    transition: color $primary-duration $timing-function;
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: getTextColor('accent');
     }
 
     @media screen and (max-width: 767px) {
@@ -96,10 +96,10 @@
         display: inline-block;
         width: 100%;
         height: 4px;
-        background-color: $accent-color;
+        background-color: getBcgColor('accent');
         border-radius: 2px;
         transform: scaleX(0);
-        transition: transform $primary-duration$timing-function;
+        transition: transform $primary-duration $timing-function;
       }
 
       &:focus::after,
@@ -110,7 +110,7 @@
   }
 
   &__link--current {
-    color: $accent-color;
+    color: getTextColor('accent');
 
     &::after {
       transform: scaleX(1);
@@ -163,13 +163,13 @@
     font-weight: $secondary-font-weight;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: $primary-text-color;
+    color: getTextColor('primary');
     text-decoration: none;
     transition: color $primary-duration $timing-function;
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: getTextColor('accent');
     }
 
     @media screen and (max-width: 767px) {
@@ -178,7 +178,7 @@
       &--accent {
         font-size: 34px;
         line-height: 1.18;
-        color: $accent-color;
+        color: getTextColor('accent');
       }
     }
 
@@ -217,7 +217,7 @@
     &:not(:last-child) {
       padding-right: 10px;
       margin-right: 10px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      border-right: 1px solid getColor('border');
     }
   }
 
@@ -226,7 +226,7 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: #2196f3;
+    color: getTextColor('accent');
     text-decoration: none;
   }
 
@@ -243,7 +243,7 @@
 
     &:hover,
     &:focus {
-      fill: $accent-color;
+      fill: getTextColor('accent');
     }
 
     @media screen and (min-width: $tablet) {

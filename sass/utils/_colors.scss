@@ -1,0 +1,53 @@
+$colors: (
+  'header-border': #ececec,
+  'btn-border': rgba(0, 0, 0, 0.1),
+  'border': rgba(33, 33, 33, 0.2),
+  'backdrop': rgba(0, 0, 0, 0.2),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$textColors: (
+  'primary': #757575,
+  'title': #212121,
+  'accent': #2196f3,
+  'placeholder': rgba(117, 117, 117, 0.5),
+  'white': #ffffff,
+  'black': #000000,
+  'hero': #ffffff,
+  'footer': #ffffff,
+  'footer-contacts': rgba(255, 255, 255, 0.6),
+  'newsletter': rgba(255, 255, 255, 0.3),
+  'project-desc': #ffffff,
+);
+
+@function getTextColor($key) {
+  @return map-get($textColors, $key);
+}
+
+$bcgColors: (
+  'primary': #ffffff,
+  'secondary': #f5f4fa,
+  'accent': #2196f3,
+  'hero': #c4c4c4,
+  'footer': #2f303a,
+  'animation': rgba(33, 150, 243, 0.9),
+  'service-label': rgba(47, 48, 58, 0.8),
+);
+
+@function getBcgColor($key) {
+  @return map-get($bcgColors, $key);
+}
+
+$iconColors: (
+  'primary': #afb1b8,
+  'secondary': #ffffff,
+  'accent': #2196f3,
+  'footer': rgba(255, 255, 255, 0.1),
+);
+
+@function getIconColor($key) {
+  @return map-get($iconColors, $key);
+}

@@ -1,9 +1,10 @@
 @import './base/normalize';
+@import './utils/colors';
 @import './utils/variables';
 @import './utils/breakpoints';
 @import './base/fonts';
 
-@import './base/defaults';
+@import './base/reset';
 @import './utils/section';
 @import './utils/container';
 @import './utils/list';

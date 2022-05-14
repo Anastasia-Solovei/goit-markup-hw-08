@@ -2,12 +2,12 @@
   &__subheading {
     margin-top: 0;
     margin-bottom: 10px;
-    color: $title-text-color;
+    color: getTextColor('title');
     font-weight: $primary-font-weight;
   }
 
   &__heading {
-    color: $title-text-color;
+    color: getTextColor('title');
     font-weight: $primary-font-weight;
     line-height: 1.17;
     text-align: center;
@@ -15,7 +15,7 @@
 
   &__label {
     margin-bottom: 20px;
-    color: $white-color;
+    color: getTextColor('white');
     font-weight: $primary-font-weight;
     line-height: $primary-line-height;
     text-transform: uppercase;
