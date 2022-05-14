@@ -1,5 +1,5 @@
 body {
-  color: $primary-text-color;
+  color: getTextColor('primary');
   font-family: $main-font-family;
   font-size: $primary-text-font-size;
   line-height: $default-line-height;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid getColor('header-border');
 
   @media screen and (min-width: $tablet) {
     position: fixed;
