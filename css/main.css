@@ -376,7 +376,6 @@ h2 {
   margin-bottom: 0px;
 }
 
-/* Секция */
 .section__subheading {
   margin-top: 0;
   margin-bottom: 10px;
@@ -399,7 +398,6 @@ h2 {
   text-transform: uppercase;
 }
 
-/* Контейнер */
 .container {
   padding-top: 0;
   padding-bottom: 0;
@@ -427,14 +425,12 @@ h2 {
   }
 }
 
-/* Список */
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* Визуально скрыто */
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
