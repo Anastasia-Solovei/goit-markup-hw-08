@@ -1,0 +1,49 @@
+$fontSize-mob: (
+  'logo': 24px,
+  'navigation': 40px,
+  'tel': 34px,
+  'email': 24px,
+  'header-social': 18px,
+  'hero': 26px,
+  'button': 16px,
+  'feature': 14px,
+  'team-heading': 28px,
+  'team': 16px,
+  'clients-heading': 28px,
+  'footer': 14px,
+  'newsletter': 16px,
+  'form-heading': 20px,
+  'form-text': 12px,
+  'form-placeholder': 14px,
+  'project-title': 18px,
+  'project-descr': 18px,
+  'project-text': 16px,
+);
+
+@function getFontSizeMob($key) {
+  @return map-get($fontSize-mob, $key);
+}
+
+$fontSize-tab: (
+  'navigation': 14px,
+  'contact': 12px,
+);
+
+@function getFontSizeTab($key) {
+  @return map-get($fontSize-tab, $key);
+}
+
+$fontSize-desc: (
+  'logo': 26px,
+  'contact': 14px,
+  'hero': 44px,
+  'team-heading': 36px,
+  'clients-heading': 36px,
+  'service-header': 36px,
+  'service-label': 14px,
+  'form-text': 14px,
+);
+
+@function getFontSizeDesc($key) {
+  @return map-get($fontSize-desc, $key);
+}

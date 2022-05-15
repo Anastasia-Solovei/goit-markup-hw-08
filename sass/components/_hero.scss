@@ -124,7 +124,7 @@
     color: getTextColor('hero');
 
     font-weight: 900;
-    font-size: 26px;
+    font-size: getFontSizeMob('hero');
     line-height: 1.62;
     text-align: center;
     align-items: center;
@@ -133,7 +133,7 @@
 
     @media screen and (min-width: $desktop) {
       width: 696px;
-      font-size: 44px;
+      font-size: getFontSizeDesc('hero');
       line-height: 1.36;
     }
   }

@@ -12,11 +12,11 @@
     display: flex;
     align-items: center;
     padding-left: 24px;
-    font-size: 12px;
+    font-size: getFontSizeMob('form-text');
     line-height: 1.17;
 
     @media screen and (min-width: $desktop) {
-      font-size: 14px;
+      font-size: getFontSizeDesc('form-text');
       line-height: 1.71;
     }
   }

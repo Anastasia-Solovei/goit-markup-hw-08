@@ -49,6 +49,7 @@
     margin-bottom: 8px;
     color: getTextColor('footer');
     font-style: normal;
+    font-size: getFontSizeMob('footer');
     line-height: 1.71;
   }
 
@@ -71,6 +72,7 @@
   &__contact-link {
     color: getTextColor('footer-contacts');
     font-style: normal;
+    font-size: getFontSizeMob('footer');
     line-height: 1.71;
     text-decoration: none;
     transition: color $primary-duration $timing-function;
@@ -79,6 +81,10 @@
     &:focus {
       color: getTextColor('accent');
     }
+  }
+
+  &__label {
+    font-size: getFontSizeMob('footer');
   }
 
   &__social {

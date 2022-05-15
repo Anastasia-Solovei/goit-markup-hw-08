@@ -80,11 +80,12 @@
     }
 
     @media screen and (max-width: 767px) {
-      font-size: 40px;
+      font-size: getFontSizeMob('navigation');
       line-height: 1.18;
     }
 
     @media screen and (min-width: $tablet) {
+      font-size: getFontSizeTab('navigation');
       padding: 32px 0;
       line-height: $primary-line-height;
 
@@ -173,21 +174,21 @@
     }
 
     @media screen and (max-width: 767px) {
-      font-size: 24px;
+      font-size: getFontSizeMob('email');
 
       &--accent {
-        font-size: 34px;
+        font-size: getFontSizeMob('tel');
         line-height: 1.18;
         color: getTextColor('accent');
       }
     }
 
     @media screen and (min-width: $tablet) {
-      font-size: 12px;
+      font-size: getFontSizeTab('contact');
     }
 
     @media screen and (min-width: $desktop) {
-      font-size: 14px;
+      font-size: getFontSizeDesc('contact');
       line-height: 1.14;
     }
   }
@@ -196,7 +197,11 @@
     fill: currentColor;
 
     &--start {
-      margin-right: 10px;
+      margin-right: 8px;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+      }
     }
 
     @media screen and (max-width: 767px) {
@@ -223,7 +228,7 @@
 
   &__social-link {
     font-weight: $secondary-font-weight;
-    font-size: 18px;
+    font-size: getFontSizeMob('header-social');
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: getTextColor('accent');

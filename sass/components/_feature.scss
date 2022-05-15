@@ -49,7 +49,7 @@
   }
 
   &__title {
-    font-size: $primary-text-font-size;
+    font-size: getFontSizeMob('feature');
     line-height: $primary-line-height;
     text-align: center;
     text-transform: uppercase;
@@ -57,5 +57,9 @@
     @media screen and (min-width: $tablet) {
       text-align: unset;
     }
+  }
+
+  &__text {
+    font-size: getFontSizeMob('feature');
   }
 }

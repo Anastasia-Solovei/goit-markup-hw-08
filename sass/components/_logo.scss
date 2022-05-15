@@ -3,12 +3,12 @@
   color: getTextColor('accent');
   font-family: $logo-font-family;
   font-weight: $primary-font-weight;
-  font-size: 24px;
+  font-size: getFontSizeMob('logo');
   line-height: 1.17;
   text-decoration: none;
 
   @media screen and (min-width: $desktop) {
-    font-size: 26px;
+    font-size: getFontSizeDesc('logo');
     line-height: $secondary-line-height;
   }
 }

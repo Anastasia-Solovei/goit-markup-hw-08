@@ -47,7 +47,7 @@
       padding-left: 16px;
       padding-right: 16px;
       color: getTextColor('newsletter');
-      font-size: 16px;
+      font-size: getFontSizeMob('newsletter');
       line-height: 1.25;
     }
   }

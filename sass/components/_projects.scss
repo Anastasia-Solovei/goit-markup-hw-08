@@ -18,7 +18,7 @@
 
   &__description-text {
     color: getTextColor('project-desc');
-    font-size: $animation-text-font-size;
+    font-size: getFontSizeMob('project-descr');
     line-height: 1.56;
   }
 
@@ -31,14 +31,14 @@
 
   &__title {
     margin-bottom: 4px;
-    font-size: 18px;
+    font-size: getFontSizeMob('project-title');
     line-height: 2;
     letter-spacing: 0.06em;
   }
 
   &__text {
     color: getTextColor('primary');
-    font-size: 16px;
+    font-size: getFontSizeMob('project-text');
     line-height: 1.88;
   }
 }

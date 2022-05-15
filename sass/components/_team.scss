@@ -16,11 +16,11 @@
 
   &__heading {
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: getFontSizeMob('team-heading');
 
     @media screen and (min-width: $desktop) {
       margin-bottom: 50px;
-      font-size: 36px;
+      font-size: getFontSizeDesc('team-heading');
     }
   }
 
@@ -73,14 +73,14 @@
 
   &__subheading {
     font-weight: $secondary-font-weight;
-    font-size: $team-section-font-size;
+    font-size: getFontSizeMob('team');
     line-height: $secondary-line-height;
     text-align: center;
   }
 
   &__spec {
     margin-bottom: 16px;
-    font-size: $team-section-font-size;
+    font-size: getFontSizeMob('team');
     line-height: $secondary-line-height;
     text-align: center;
   }

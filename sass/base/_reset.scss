@@ -1,7 +1,7 @@
 body {
   color: getTextColor('primary');
   font-family: $main-font-family;
-  font-size: $primary-text-font-size;
+  font-size: getFontSizeMob('primary');
   line-height: $default-line-height;
   letter-spacing: 0.03em;
 }
