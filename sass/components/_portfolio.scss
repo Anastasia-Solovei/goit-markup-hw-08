@@ -12,6 +12,7 @@
     }
   }
 }
+
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +79,7 @@
   }
 
   & .project__description {
-    transition: transform $primary-duration$timing-function;
+    transition: transform $primary-duration $timing-function;
   }
 
   &:focus .project__description,

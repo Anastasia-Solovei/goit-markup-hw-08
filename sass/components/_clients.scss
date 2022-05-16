@@ -22,7 +22,7 @@
 
   &__list {
     display: flex;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: $max-tablet) {
       flex-wrap: wrap;
       margin-top: -30px;
       margin-left: -30px;
@@ -36,13 +36,13 @@
       margin-left: 30px;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: $max-tablet) {
       width: 210px;
       margin-top: 30px;
       margin-left: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
       width: 226px;
     }
   }

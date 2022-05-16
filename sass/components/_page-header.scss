@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       display: none;
       position: absolute;
       top: 0;
@@ -52,7 +52,7 @@
   }
 
   &__link-item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       &:not(:first-child) {
         margin-top: 32px;
       }
@@ -79,7 +79,7 @@
       color: getTextColor('accent');
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       font-size: getFontSizeMob('navigation');
       line-height: 1.18;
     }
@@ -121,12 +121,12 @@
   &__contacts {
     display: flex;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       flex-direction: column-reverse;
       margin-top: 302px;
     }
 
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
       display: block;
       margin-left: 84px;
     }
@@ -138,7 +138,7 @@
   }
 
   &__contact-item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       &:nth-child(1) {
         margin-top: 32px;
       }
@@ -173,7 +173,7 @@
       color: getTextColor('accent');
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       font-size: getFontSizeMob('email');
 
       &--accent {
@@ -199,12 +199,12 @@
     &--start {
       margin-right: 8px;
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         margin-right: 10px;
       }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       display: none;
     }
   }
@@ -212,7 +212,7 @@
   &__social {
     display: none;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $max-mobile) {
       display: flex;
       margin-top: 64px;
     }
